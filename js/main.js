@@ -13,17 +13,17 @@ console.log(km);
 const età = parseInt(prompt("quati anni hai?"));
 console.log(età);
 let price = km * (0, 21);
-console.log(price);
+console.log(`quanto cosa?`, price);
 
 
 if (età < 65) {
     // Fare il 40% del prezzo
-    price - 0, 4;
+    price * 40 / 100;
 }
 
 
 if (età > 18) {
-    price - 0, 2;
+    price * 20 / 100;
 
 
 
