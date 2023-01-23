@@ -12,7 +12,7 @@ let km = parseInt(prompt("quanti km vuoi percorrere?"));
 console.log(km);
 let età = parseInt(prompt("quati anni hai?"));
 console.log(età);
-let price = parseFloat("0,21");
+let price = parseFloat(0, 21);
 
 
 if
@@ -30,4 +30,4 @@ else if (età > 18) {
 
 
 }
-document.getElementById('info').innerHTML = km;
+document.getElementById('info').innerHTML = price;
