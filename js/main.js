@@ -16,14 +16,14 @@ let price = km * (0, 21);
 console.log(price);
 
 
-if
-    (età < 65) {
-    price - 40 %;
-
-
+if (età < 65) {
+    // Fare il 40% del prezzo
+    price - 0, 4;
 }
+
+
 if (età > 18) {
-    price - 20 %;
+    price - 0, 2;
 
 
 
