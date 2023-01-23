@@ -8,11 +8,11 @@
 // 'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 // 
 // 
-const km = parseInt(prompt("quanti km vuoi percorrere?"));
+const km = parseFloat(prompt("quanti km vuoi percorrere?"));
 console.log(km);
-const età = parseInt(prompt("quati anni hai?"));
+const età = parseFloat(prompt("quati anni hai?"));
 console.log(età);
-let price = km * (0, 21);
+let price = parseFloat(0, 21) * km;
 console.log(`quanto cosa?`, price);
 
 
