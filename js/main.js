@@ -1,5 +1,5 @@
 // chiedere quanti km vuoi percorrere
- 
+
 //chiedere età  
 // calcolo prezzo del viaggio
 // Il prezzo del biglietto è definito in base ai km (0.21 € al km).
@@ -8,3 +8,7 @@
 // 'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 // 
 // 
+const km = parseInt(prompt("quanti km vuoi percorrere?"));
+console.log(typeof km);
+const età = parseInt(prompt("quati anni hai?"));
+console.log(typeof età);
