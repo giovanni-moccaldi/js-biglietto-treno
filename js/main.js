@@ -8,32 +8,36 @@
 // 'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 // 
 // 
-const km = parseInt(prompt("quanti km vuoi percorrere?"));
-console.log(`quanti km`, km);
-const età = parseInt(prompt("quati anni hai?"));
-console.log(`quanti anni?`, età);
-let priceperkm = parseInt(0, 21) * km;
-console.log(`quanto costa?`, priceperkm);
-let price= km * priceperkm;
+
+// Il numero di chilometri da percorrere
+const userkm = parseInt("quanti km vuoi fare?");
+console.log(`quanti km `, userkm);
+
+// Età del passeggero
+const userage = parseInt("quanti anni hai?");
+console.log(`quanti anni `, userage);
+const pricekm = 0.21;
+let price = userkm * pricekm;
+console.log("il prezzo é", price);
+if (userage > 18) {
+    //  sconto minorenni
+    const underdiciotto = 20 / 100;
+
+    // calcolo prezzo scontato
+    const discountamount18 = price * underdiciotto;
+    console.log("lo sconto é", discountamount18);
+    price = price - discountamount18;
 
 
-if (età < 65) {
-    // Fare il 40% del prezzo
-    const discountperunder65 = 40 / 100;
-    //  calcolo discount con il prezzo
-    const discountamount = price * discountperunder65;
-    // CALCOLO PREZO CON DISCOUNT
-    price = price - discountperunder65;
+}
+if (userage < 65) {
+    // sconto minorenni
+    const oversixtyfive = 40 / 100;
+    // calcolo prezzo scontato
+    const discountamount65 = price * oversixtyfive;
+    console.log("lo sconto é", oversixtyfive);
+    price = price - oversixtyfive;
 
-    
-  
-    
-    
-    
 }
 
-
-if (età > 18) {
-    price * 20 / 100;
-}
 document.getElementById('info').innerHTML = price;
